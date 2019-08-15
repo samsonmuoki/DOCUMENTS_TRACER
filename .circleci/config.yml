@@ -47,8 +47,8 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
-            python documents_tracer/manage.py test
+            # . venv/bin/activate
+            # python documents_tracer/manage.py test
 
       - store_artifacts:
           path: test-reports
