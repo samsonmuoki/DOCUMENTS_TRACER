@@ -49,10 +49,7 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            cd documents_tracer
-            python manage.py test
-            coverage run --source="." manage.py test
-            coverage report
+            tox
 
       - store_artifacts:
           path: test-reports
