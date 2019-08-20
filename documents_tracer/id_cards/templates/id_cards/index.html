@@ -1,0 +1,8 @@
+{% load static %} {% if latest_question_list %}
+{% for question in latest_question_list %}
+{{ question.question_text }}
+{% endfor %}
+{% else %}
+No polls are available.
+
+{% endif %}
