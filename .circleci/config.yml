@@ -49,8 +49,9 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            python documents_tracer/manage.py test
-            coverage run --source="documents_tracer" manage.py test
+            cd documents_tracer
+            python manage.py test
+            coverage run --source="." manage.py test
             coverage report
 
       - store_artifacts:
