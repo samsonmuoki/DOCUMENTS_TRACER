@@ -51,8 +51,7 @@ jobs:
             . venv/bin/activate
             cd documents_tracer
             python manage.py test
-            # coverage run --source="." manage.py test
-            coverage run --source="documents_tracer" manage.py test
+            coverage run --source="." manage.py test
             coverage report
 
       - store_artifacts:
