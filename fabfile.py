@@ -8,3 +8,11 @@ def migrations():
 
 def runserver():
     local('python3 documents_tracer/manage.py runserver 7000')
+
+
+def create_package():
+    local('python3 setup.py sdist bdist_wheel')
+
+
+def upload_package():
+    local('twine upload dist/*')
