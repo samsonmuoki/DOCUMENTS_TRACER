@@ -49,8 +49,8 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
-            cd documents_tracer
-            coverage run --source="."  manage.py test
+            # cd documents_tracer
+            coverage run --source="documents_tracer" documents_tracer/manage.py test
             coverage report
             # tox
 
