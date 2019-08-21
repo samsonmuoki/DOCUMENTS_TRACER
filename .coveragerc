@@ -4,6 +4,7 @@ omit =
     documents_tracer/manage.py
     documents_tracer/id_cards/__init__.py
     documents_tracer/id_cards/migrations/*
+    documents_tracer/id_cards/tests.py
     documents_tracer/documents_tracer/wsgi.py
     documents_tracer/documents_tracer/settings.py
     documents_tracer/documents_tracer/__init__.py
