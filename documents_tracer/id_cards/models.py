@@ -3,12 +3,12 @@ from django.db import models
 # Create your models here.
 
 
-class Time_Stamp_Model(models.Model):
-    created = models.DateTimeField
-    modified = models.DateTimeField
+# class Time_Stamp_Model(models.Model):
+#     created = models.DateTimeField
+#     modified = models.DateTimeField
 
-    class Meta:
-        abstract = True
+#     class Meta:
+#         abstract = True
 
 
 class Lost_Id_card(models.Model):

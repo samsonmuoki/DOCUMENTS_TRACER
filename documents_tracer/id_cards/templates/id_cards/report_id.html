@@ -1,0 +1,14 @@
+<html>
+    <h1>Report a lost identification card</h1>
+    <form method="post">
+        {%csrf_token %}
+        <label>ID NUMBER</label> <input name="idno" placeholder="ID number"> </br>
+        <label>FULL NAME</label> <input name="name" placeholder="Full name"> </br>
+        <label>DOB</label> <input name="dob" placeholder="Date of birth"> </br>
+        <label>GENDER</label> <input name="gender" placeholder="gender"> </br>
+        <label>PLACE FOUND</label> <input name="placefound" placeholder="place found"> </br>
+        <label>OFFICE SUBMITTED</label> <input name="office" placeholder="office submitted"> </br>
+        <label>PICTURE</label> <input name="picture" placeholder="picture"> </br>
+        <input type="submit" value="upload">
+    </form>
+</html>
