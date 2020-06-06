@@ -5,7 +5,7 @@ attrs==19.1.0
 bcrypt==3.1.7
 cffi==1.12.3
 cryptography==2.7
-Django==2.2.4
+Django==2.2.13
 entrypoints==0.3
 Fabric3==1.14.post1
 filelock==3.0.12
